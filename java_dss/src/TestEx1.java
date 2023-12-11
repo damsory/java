@@ -16,7 +16,7 @@ public class TestEx1 {
 		System.out.println(korScore +"+"+ engScore + "+" +mathScore +"=" +((korScore + engScore + mathScore)));
 		System.out.println(korScore +"+"+ engScore + "+" +mathScore +"=" +((double)(korScore + engScore + mathScore)/3));
 		
-		
+		 
 
 	}
 
