@@ -12,23 +12,27 @@ public class HomeworkEx1 {
 		 * 60미만:F
 		 * 0보다 작거나 100보다 큰 경우 :잘못된 점수
 		 */
+		
 		Scanner scan =new Scanner(System.in);
+		//성적을 콘솔에서 입력 받음
 		System.out.print("성적을 입력하세요 :");
 		int sco =scan.nextInt();
-		
+		//성적을 기준으로 학점을 출력
 		if(sco<0 || sco>100  ) {
 			System.out.println("잘못된 점수");
 		}else if(sco>=90 ) {
-			System.out.println("A");
-		}else if(sco>=80 && sco<90 ) {
-			System.out.println("B");
-		}else if(sco>=70 && sco<80) {
-			System.out.println("C");	
+			System.out.println(sco+"점은 A");
+		}else if(sco>=80  ) {
+			System.out.println(sco+"점은 B");
+		}else if(sco>=70 ) {
+			System.out.println(sco+"점은 C");	
 		}else if(sco>=60 && sco<70) {
-			System.out.println("D");
+			System.out.println(sco+"점은 D");
 	}	else {
-		System.out.println("F");
+		System.out.println(sco+"점은 F");
 	}
+		
+		//순서가 중요한 대신 조건식이 간결해지는 방법
 		scan.close();
 	}
 
