@@ -14,10 +14,10 @@ public class InfiniteLoopEx1 {
 			System.out.println("정수 출력 : "+ num);
 		}
 		System.out.println("프로그램 종료!");
-		}
+	}
 		/*
 		for( ; ;)
 		*/
 	}
-
 }
+
