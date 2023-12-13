@@ -17,7 +17,7 @@ public class ForPrimeNumberEx1 {
 		
 		int num=6;
 		int count , i;
-		for(i=1, count=0;  i <= num ; i++ ) {
+		for( i=1, count=0;  i <= num ; i++ ) {
 			if(num % i == 0) {
 				++count;
 			}	

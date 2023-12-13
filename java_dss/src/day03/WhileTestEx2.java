@@ -7,11 +7,11 @@ public class WhileTestEx2 {
 		 * 
 		 */
 
-		int i=5;
-		int count =1;
-		while(i>=count) {
-			System.out.print(" "+ i);
-			--i;
+		 int i=5;
+		 
+		 while(i>=1) {
+			 System.out.println(i);
+			 --i;
 		}
 		
 	}
