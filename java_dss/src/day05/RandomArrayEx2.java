@@ -6,7 +6,7 @@ public class RandomArrayEx2 {
 		/*1~9 사이의 중복되지 않은 랜덤한 수 3개를 저장하는 예제
 		 */
 		
-		int min=1,max=9;
+		int min=1,max=31;
 		int arr[]=new int[3];
 		int count= 0;//배열에 저장된 중복되지 않은 수의 개수
 		
