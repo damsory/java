@@ -34,7 +34,6 @@ public class ThirtyOneEx1 {
 			end= end>=31? 31:end;
 			/*if(end>=31) {
 				end=31;
-				System.out.println("");
 			}*/
 		
 			//아니면 현재 숫자부터 랜덤으로 생성된 숫자 개수만큼 출력
