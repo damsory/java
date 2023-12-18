@@ -12,7 +12,7 @@ public class ArrayMethodEx2 {
 		prinitArray(arr2);
 		
 		int [] arr3 =initArray3(5);
-		initArray2(arr2);
+		prinitArray(arr2);
 	}
 	
 	public static void prinitArray(int []arr) {
