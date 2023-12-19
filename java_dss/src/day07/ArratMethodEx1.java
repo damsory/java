@@ -106,7 +106,7 @@ public class ArratMethodEx1 {
 			 * 매서드명 : random
 		
 			 * */
-
+			//랜덤한 수 생성하는 메서드
 			public static int random(int min, int max) {
 				if(max<min) {
 					int tmp =max;

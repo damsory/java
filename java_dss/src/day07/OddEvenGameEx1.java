@@ -98,7 +98,7 @@ public class OddEvenGameEx1 {
 		int r =random(1,100);
 		Scanner scan=new Scanner(System.in);
 		System.out.println("선택(홀:1,짝:0): ");
-		int user=scan.nextInt();
+		int user=scan.nextInt(); 
 		System.out.println(r+" "+(r%2==0?"짝":"홀")+"입니다");
 		//판별
 		return r % 2 == user;
@@ -116,7 +116,7 @@ public class OddEvenGameEx1 {
 	/* 기능    : min~max 사이의 랜덤한 수를 생성해서 알려주는 매서드  
 	 * 매개변수 :	최소값과 최대값 =>int min,int max
 	 * 리턴타입 : 생성된 랜덤한 수=> 정수=>int	
-	 * 매서드명 : random
+	 * 매서드(함수)명 : random
 
 	 * */
 
