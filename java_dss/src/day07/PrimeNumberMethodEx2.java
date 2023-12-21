@@ -62,8 +62,8 @@ public class PrimeNumberMethodEx2 {
 	}
 	
 	//  반환타입 함수명(매개변수들){
-	구현;
-	return 값;//반환타입이 있는 경우
+//	구현;
+//	return 값;//반환타입이 있는 경우
 
 	
 	
