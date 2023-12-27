@@ -44,7 +44,9 @@ class Board{
 		SimpleDateFormat format =new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		try {
 			regDate =format.parse(str);	
-		}ca
+		}catch (ParseException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
