@@ -2,6 +2,7 @@ package day14;
 
 import java.text.MessageFormat;
 import java.util.Scanner;
+import org.ietf.jgss.MessageProp;
 
 public class ArithmeticExceptionEx2 {
 
@@ -22,22 +23,23 @@ public class ArithmeticExceptionEx2 {
 		}
 	}
 	public static double calculate(int num1,char op,int num2) 
-		throws RuntimeException{	
+			throws RuntimeException{
 		switch(op) {
-		case '+':   return num1+ num2;
-		case '-':   return num1 -num2; 
-		case '*':   return num1*num2; 
-		case '/':   return num1/(double)num2; 
-		if(num2==0) {
-			throw new ArithmeticException("0으로 나눌수 없습니다.")
-		}
-		case '%':   
-			if(num2==0) {
-				throw new ArithmeticException("0으로 나눌수 없습니다.")
+		case '+':	return num1 + num2;
+		case '-':	return num1 - num2;
+		case '*':	return num1 * num2;
+		case '%':
+			if(num2 == 0) {
+				throw new ArithmeticException("0으로 나눌 수 없습니다.");
 			}
-			return num1%num2;
+			return num1 % num2;
+		case '/':
+			if(num2 == 0) {
+				throw new ArithmeticException("0으로 나눌 수 없습니다.");
+			}
+			return num1 / (double)num2;
 		default:
-			throw new RuntimeException(op+"는 산술 연산자가 아닙니다.")
+			throw new RuntimeException(op + "는 산술 연산자가 아닙니다.");
 		}
 		
 		
