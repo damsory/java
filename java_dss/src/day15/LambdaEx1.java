@@ -29,7 +29,6 @@ public class LambdaEx1 {
  * @FunctionalInterface을 붙일 수 있다.*/
 @FunctionalInterface
 interface InterfaceA{
-	
 	void print();
 }
 class ClassA implements InterfaceA{
