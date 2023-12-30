@@ -7,15 +7,15 @@ public class WhileMultipleTableEx1 {
 		 * 2x1=2
 		 * ....
 		 * 2x9=18
-		 * 반복회수 :
-		 * 규칙성   :
+		 * 반복회수 	: i는 1부터 9까지 1씩 
+		 * 규칙성   	: 2 X i = 2*i를 출력
 		 * 반복문종료후 :없음
 		 */
-		int num =10;
+		int num=2;
 		int i=1;
 		int count=9;
-		while(i <=count) {
-			System.out.print(" "+num+"x"+i+ "="+(num*i));
+		while(i<=count) {
+			System.out.println(" "+num+"x"+i+ "="+num*i);
 			++i;
 		}
 		
