@@ -13,6 +13,9 @@ public class Word implements Serializable {
 	
 	private static final long serialVersionUID = -2589417881748753391L;
 	private String word,wordClass,meanIng;
+	public Word(String word2, String wordClass2, String meanIng2) {
+		// TODO Auto-generated constructor stub
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

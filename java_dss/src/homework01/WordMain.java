@@ -1,8 +1,15 @@
 package homework01;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import day16.student.Student;
 
 public class WordMain {
 	
@@ -27,7 +34,7 @@ public class WordMain {
 		 * - 많이 조회한 단어를 확인하는 기능
 		 * */
 		int menu=0;
-		String fileName ="src/homework01/listEx1.txt";
+		String fileName ="src/homework01/list.txt";
 		load(fileName);
 		do {
 			try {
@@ -47,8 +54,12 @@ public class WordMain {
 		
 	}
 	private static void save(String fileName) {
-		// TODO Auto-generated method stub
-		
+		try(FileOutputStream fos =new FileOutputStream(fileName);
+				ObjectOutputStream oos = new ObjectOutputStream(fos)){
+				oos.writeObject(word);
+			} catch (IOException e) {
+				System.out.println("저장에 실패했습니다.");
+			}
 	}
 	private static void runMenu(int menu) {
 		switch(menu) {
@@ -72,7 +83,7 @@ public class WordMain {
 		}
 	}
 	private static void printWord() {
-		
+	  word.stream().forEach(s->System.out.println(s));
 	}
 	private static void deleteWord() {
 		
@@ -91,7 +102,9 @@ public class WordMain {
 		//객체 생성
 		Word wd =new Word(word,wordClass,meanIng);
 		
-		 
+		
+		System.out.println("단어를 추가했습니다.");
+		return; 
 		
 	}
 	private static void printMenu() {
@@ -106,7 +119,13 @@ public class WordMain {
 		
 	}
 	private static void load(String fileName) {
-		
+		try(FileInputStream fis = new FileInputStream(fileName);
+				ObjectInputStream ois =new ObjectInputStream(fis)){
+			word = (List<Word>)ois.readObject();
+			System.out.println("단어 정보를 불러왔습니다.");
+		} catch (Exception e) {
+			System.out.println("불러오기에 실패했습니다.");
+		}
 	}
 
 }
