@@ -32,7 +32,7 @@ public class WordMain {
 		 * - 오답 노트를 관리하는 기능 
 		 * - 많이 조회한 단어를 확인하는 기능
 		 * */
-	WordPorgram wp =new WordProgram();
+	WordProgram wp =new WordProgram();
 	wp.run();
 	}
 }

@@ -44,7 +44,7 @@ private static void save(String fileName) {
 			System.out.println("저장에 실패했습니다.");
 		}
 }
-private static void runMenu(int menu) {
+private  void runMenu(int menu) {
 	switch(menu) {
 	case 1:
 		insertWord();
@@ -90,7 +90,7 @@ private  void insertWord() {
 	return; 
 	
 }
-private static void printMenu() {
+public void printMenu() {
 	System.out.println("메뉴");
 	System.out.println("1.단어 추가");
 	System.out.println("2.단어 수정");
