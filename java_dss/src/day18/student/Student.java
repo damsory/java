@@ -4,18 +4,25 @@ import java.io.Serializable;
 import java.util.Objects;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 
-
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 public class Student implements Serializable{
 
 	
-	private static final long serialVersionUID = 6787455733541030095L;
-	private int grade, classNum,num;
+private static final long serialVersionUID = 1234567890123456789L;
+	
+	private int grade, classNum, num;
 	private String name;
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(classNum, grade, num);
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -27,13 +34,10 @@ public class Student implements Serializable{
 		Student other = (Student) obj;
 		return classNum == other.classNum && grade == other.grade && num == other.num;
 	}
-	@Override
-	public int hashCode() {
-		return Objects.hash(classNum, grade, num);
-	}
+	
 	@Override
 	public String toString() {
-		return "Student [grade=" + "학년" + ", classNum=" + "반" + ", num=" + "번호" + ", name=" + "이름" + "]";
+		return "[" + grade + "학년 " + classNum + "반 " + num + "번 " + name + "]";
 	}
 	
 }
