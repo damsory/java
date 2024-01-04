@@ -83,7 +83,7 @@ public class WordMain {
 		}
 	}
 	private static void printWord() {
-	  word.stream().forEach(s->System.out.println(s));
+	  word.stream().forEach(w->System.out.println(w));
 	}
 	private static void deleteWord() {
 		
@@ -100,7 +100,7 @@ public class WordMain {
 		System.out.print("뜻 :");
 		String meanIng=scan.next();
 		//객체 생성
-		Word wd =new Word(word,wordClass,meanIng);
+		Word wod =new Word(word,wordClass,meanIng);
 		
 		
 		System.out.println("단어를 추가했습니다.");
