@@ -36,15 +36,18 @@ public class WordProgram implements Program{
 	
 	
 }
-private static void save(String fileName) {
+
+public void save(String fileName) {
 	try(FileOutputStream fos =new FileOutputStream(fileName);
 			ObjectOutputStream oos = new ObjectOutputStream(fos)){
-			oos.writeObject(wm.get);
+			oos.writeObject(wm.getClass());
 		} catch (IOException e) {
 			System.out.println("저장에 실패했습니다.");
 		}
 }
-private  void runMenu(int menu) {
+
+@Override
+public void runMenu(int menu) {
 	switch(menu) {
 	case 1:
 		insertWord();
@@ -63,7 +66,7 @@ private  void runMenu(int menu) {
 		break;
 	default:
 		throw new RuntimeException();
-	}
+	}	
 }
 private static void printWord() {
   word.stream().forEach(w->System.out.println(w));
@@ -90,6 +93,7 @@ private  void insertWord() {
 	return; 
 	
 }
+@Override
 public void printMenu() {
 	System.out.println("메뉴");
 	System.out.println("1.단어 추가");
