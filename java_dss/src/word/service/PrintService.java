@@ -6,7 +6,10 @@ public interface PrintService {
 
 	void printWordMenu();
 
-	
-	
-	
+	void printMeanMenu();
+
+	void printPrintMenu();
+
+	void printGameMenu();
+
 }
