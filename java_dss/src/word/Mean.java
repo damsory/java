@@ -16,6 +16,8 @@ public class Mean implements Serializable{
 	
 	private String partOfSpeech;//품사
 	private String mean;//뜻
+	final int test =10;
+	static int count;
 	
 	//[명사] 사과 형태로 출력하기 위해 재정의
 	@Override
