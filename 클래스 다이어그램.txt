@@ -1,0 +1,9 @@
++: public
+-:private
+#:portected
+~:default
+readonly:final
+밑줄:static
+
+FileWriter fw = new FileWriter("파일명",true);
+
