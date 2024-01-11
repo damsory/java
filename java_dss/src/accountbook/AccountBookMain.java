@@ -1,6 +1,6 @@
 package accountbook;
 
-public class BookMain {
+public class AccountBookMain {
 
 	/* 가계부 프로그램을 작성하세요.
 	 * 기한 1/12. 팀 과제
@@ -15,7 +15,7 @@ public class BookMain {
 	 * */
 	public static void main(String[] args) {
 
-		AccountBook ab= new AccountBook();
+		AccountBookProgram ab= new AccountBookProgram();
 		ab.run();
 	}
 
