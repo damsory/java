@@ -51,6 +51,7 @@ public class StudentProgram implements Program {
 			System.out.println("지정된 위치에 파일을 찾을 수 없습니다.");
 		} catch (IOException e) {
 			System.out.println("저장에 실패 했습니다.");
+			e.printStackTrace();
 		}
 		
 	}
