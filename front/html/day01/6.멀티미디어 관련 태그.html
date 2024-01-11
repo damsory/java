@@ -50,6 +50,37 @@
     controls
     autoplay
     loop
+    preload="auto"
+    poster="https://www.fitpetmall.com/wp-content/uploads/2023/10/230420-0668-1.png"
     ></video>
+
+    <img 
+    src="https://www.fitpetmall.com/wp-content/uploads/2023/10/230420-0668-1.png" 
+    alt="고양이"
+    width="500"
+    height="500" 
+    usemap="#testmap">
+<!-- 
+    map 태그
+    - 요소의 영역을 분할하여 링크를 걸 때 사용
+    - 영역을 분할할 요소에 usemap을 지정. 값으로 # + map의 name속성값
+    area태그
+    - 영역을 지정
+    - 속성
+      - shape
+        - rect(사각형), circle(원), poly(다각형)를 이용하여 도형의 종류를 선택
+      - coords
+        - 좌표
+        - 도형 종류에 맞게 좌표를 입력. x,y좌표 순으로
+      - href
+        - 이동할 문서의 주소
+      - alt
+        - 대체 문자
+ -->
+<map name="testmap">
+    <area shape="rect" coords="0,0,250,250" href="http://www.naver.com" alt="네이버">
+    <area shape="circle" coords="375,125,125" href="http://google.com" alt="구글">
+    <area shape="poly" coords="0,250,500,250,500,500,0,500" href="http://daum.net" alt="다음">
+</map>
 </body>
 </html>
